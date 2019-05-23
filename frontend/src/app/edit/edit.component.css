@@ -1,0 +1,40 @@
+.text {
+  border-radius: 8px;
+  height: 20px;
+  width: 250px;
+}
+
+#edit_div {
+  text-align: center;
+}
+
+#edit_table {
+  text-align: left;
+  display: inline-block;
+}
+
+#edit_table  td{
+  padding: 5px;
+}
+
+.save_button {
+  width: 150px;
+  background: #0009ff;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.labels {
+  font-weight: bold;
+}
+
+#errors {
+  color: red;
+}
+
+.back_button {
+  width: 200px;
+  background: mediumslateblue;
+  color: black;
+  font-weight: bold;
+}

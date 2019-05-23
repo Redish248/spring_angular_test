@@ -1,0 +1,28 @@
+<div id="joinForm">
+<table align="center" id="join">
+  <tr>
+    <td>
+      <h3>New user?</h3>
+      <h3>Join us now!</h3>
+      <h3>Registration</h3>
+      <p>Login:</p>
+      <input class="text" matIcon matInput type="text"[(ngModel)]="login">
+      <p>Name:</p>
+      <input class="text" matIcon matInput type="text"[(ngModel)]="name">
+      <p>Email:</p>
+      <input class="text" matIcon matInput type="text"[(ngModel)]="email">
+      <p>Password:</p>
+      <input class="text" matIcon matInput type="text"[(ngModel)]="password">
+      <p>Repeat password:</p>
+      <input class="text" matIcon matInput type="text"[(ngModel)]="repeat">
+      <p id="register_error"></p>
+      <p>
+        <button mat-button class="join_button" (click)="register(login,name,email,password, repeat)"> Ok </button>
+      </p>
+      <p>
+        <button mat-button (click)="router.navigate(['']);" class="join_button"> Cancel </button>
+      </p>
+    </td>
+  </tr>
+</table>
+</div>

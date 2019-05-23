@@ -1,0 +1,33 @@
+#join td {
+  padding: 15px;
+}
+
+#join {
+  width: 500px;
+  text-align: left;
+  display: inline-block;
+  border-collapse: collapse;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+.join_button {
+  width: 100px;
+  background: #0009ff;
+  color: aliceblue;
+}
+
+#joinForm {
+  text-align: center;
+}
+
+.text {
+  border-radius: 8px;
+  height: 20px;
+  width: 200px;
+}
+
+#register_error {
+  color: red;
+}
+

@@ -1,0 +1,45 @@
+<div id = "user_div">
+  <table align="center">
+  <tr><td>
+    <button mat-button (click)="router.navigate(['/edit']);" class="join_button"> Edit </button>
+  </td><td>
+    <button mat-button (click)="this.log_out();" class="join_button"> Logout </button>
+    </td></tr>
+  </table>
+  <h2>You: {{login}}</h2>
+  <h3>Users:</h3>
+  <div>
+    <h4>Search:</h4>
+    <input maxlength="30" class="text" matIcon matInput type="text" [(ngModel)]="data">
+    <label>
+      <select [(ngModel)]="filter" class="md-no-underline" >
+        <option value="login">By login</option>
+        <option value="email">By email</option>
+        <option value="name">By name</option>
+      </select>
+    </label>
+    <button mat-button (click)="search()" class="search_button"> Find </button>
+    <button mat-button (click)="get_users()" class="join_button"> Show all </button>
+  </div>
+  <br/>
+  <table align="center" id="users_table" datatable class="row-border hover">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Login</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.userId }}</td>
+      <td>{{ user.login }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.login == login ? password :user.password }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

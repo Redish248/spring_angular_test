@@ -1,0 +1,36 @@
+#users_table {
+  border-radius: 7px;
+  border-collapse: collapse;
+  border: 2px solid black;
+  font-size: 20px;
+}
+
+#users_table td, #users_table th {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+#user_div {
+  text-align: center;
+  padding: 10px;
+}
+
+.join_button {
+  width: 150px;
+  background: #0009ff;
+  color: aliceblue;
+  margin: 5px;
+}
+
+
+.text {
+  border-radius: 8px;
+  height: 20px;
+  width: 200px;
+  margin: 5px;
+}
+
+select {
+  width: 100px;
+  margin: 5px;
+}

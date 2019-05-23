@@ -1,0 +1,68 @@
+<div id="edit_div" align="center">
+  <h2>You can edit your personal information in this page</h2>
+  <table align="center" id="edit_table">
+    <tr>
+      <td class="labels">
+        Enter your current password to edit your information:
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input class="text" matIcon matInput type="text" (input)="this.currentPass = $event.target.value"  >
+        <p><label id ="errors"></label></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="labels">Login:</td></tr>
+    <tr>
+      <td>
+        <label>Current: {{user.login}}</label>
+        <br/>
+        <input class="text" matIcon matInput type="text" (input)="this.login = $event.target.value" >
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button mat-button (click)="edit('login', login, currentPass)" class="save_button">Save</button>
+      </td>
+    </tr>
+    <tr>
+      <td class="labels">Name:</td></tr>
+    <tr>
+      <td>
+        <label>Current: {{user.name}}</label><br/>
+        <input class="text" matIcon matInput type="text" (input)="this.name = $event.target.value">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button mat-button (click)="edit('name', name, currentPass)" class="save_button">Save</button>
+      </td>
+    </tr>
+    <tr>
+      <td class="labels">Email:</td></tr>
+    <tr>
+      <td>
+        <label>Current: {{user.email}}</label><br/>
+        <input class="text" matIcon matInput type="text" (input)="this.email = $event.target.value">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button mat-button (click)="edit('email', email , currentPass)" class="save_button">Save</button>
+      </td>
+    </tr>
+    <tr>
+      <td class="labels">New password:</td></tr>
+    <tr>
+      <td>
+        <input class="text" matIcon matInput type="text" (input)="this.pass = $event.target.value" >
+      </td></tr>
+    <tr>
+      <td>
+        <button mat-button (click)="edit('password', pass, currentPass)" class="save_button">Save</button>
+      </td>
+    </tr>
+  </table>
+  <button mat-button (click)="router.navigate(['/main']);" class="back_button">Return to main page</button>
+</div>
